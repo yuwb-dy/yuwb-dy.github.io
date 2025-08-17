@@ -1,0 +1,90 @@
+# 站点名称
+site_name: 榆树 的 Wiki
+
+# 站点描述
+site_description: 这是一个基于 MkDocs 构建的 Wiki 站点
+
+# 站点作者
+site_author: yuwb
+
+# 站点 URL（如果要部署的话）
+site_url: https://yuwb-dy.github.io/
+
+# 文档目录
+docs_dir: docs
+
+# 输出目录
+# site_dir: site
+
+# 主题
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+  palette:
+    primary: blue
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# 导航结构
+nav:
+  - Home: index.md
+  - Guides: guides.md
+  - API Reference: api.md
+  - About: about.md
+
+#  markdown 扩展
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# 如果需要明确指定插件，只保留默认的 search 插件
+plugins:
+  - search
+  - i18n:
+      default_language: zh  # 建议将默认语言设置为中文
+      languages:
+        en: English
+        zh: 中文
+      nav_translations:
+        en:
+          Home: Home
+          Guides: Guides
+          API Reference: API Reference
+          About: About
+        zh:
+          Home: 首页
+          Guides: 指南
+          API Reference: API参考
+          About: 关于
+
+
+# 版权信息
+copyright: Copyright &copy; 2025 yuwb
