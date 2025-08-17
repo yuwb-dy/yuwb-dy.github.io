@@ -1,14 +1,14 @@
 # 站点名称
-site_name: My Wiki
+site_name: yuwb 的 Wiki
 
 # 站点描述
-site_description: A documentation site for my project
+site_description: 这是一个基于 MkDocs 构建的 Wiki 站点
 
 # 站点作者
-site_author: Your Name
+site_author: yuwb
 
 # 站点 URL（如果要部署的话）
-# site_url: https://example.com/docs
+site_url: https://yuwb-dy.github.io/
 
 # 文档目录
 docs_dir: docs
@@ -30,13 +30,6 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-
-# 插件
-plugins:
-  - search
-  - table-of-contents
-  - minify: 
-      minify_html: true
 
 # 导航结构
 nav:
@@ -60,8 +53,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
