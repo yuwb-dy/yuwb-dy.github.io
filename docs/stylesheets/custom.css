@@ -6,3 +6,23 @@
 [lang="zh"] {
   --md-text-font: "Noto Serif SC", "Microsoft Yahei";
 }
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(rgba(200, 200, 200, 0.3) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(200, 200, 200, 0.3) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+.md-main {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
