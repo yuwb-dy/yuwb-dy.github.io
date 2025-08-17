@@ -8,7 +8,7 @@ site_description: 这是一个基于 MkDocs 构建的 Wiki 站点
 site_author: yuwb
 
 # 站点 URL（如果要部署的话）
-site_url: https://yuwb-dy.github.io/
+site_url: https://yuwb-dy.github.io/yuwb-wiki/
 
 # 文档目录
 docs_dir: docs
