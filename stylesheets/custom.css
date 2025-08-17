@@ -1,0 +1,8 @@
+:root {
+  --md-text-font: "Roboto", "Noto Serif SC"; 
+  --md-code-font: "Fira Code";
+}
+
+[lang="zh"] {
+  --md-text-font: "Noto Serif SC", "Microsoft Yahei";
+}
