@@ -70,6 +70,26 @@ markdown_extensions:
 #   - stylesheets/extra.css
 # extra_javascript:
 #   - javascripts/extra.js
+# 如果需要明确指定插件，只保留默认的 search 插件
+plugins:
+  - search
+  - i18n:
+      default_language: zh  # 建议将默认语言设置为中文
+      languages:
+        en: English
+        zh: 中文
+      nav_translations:
+        en:
+          Home: Home
+          Guides: Guides
+          API Reference: API Reference
+          About: About
+        zh:
+          Home: 首页
+          Guides: 指南
+          API Reference: API参考
+          About: 关于
+
 
 # 版权信息
-copyright: Copyright &copy; 2023 Your Name
+copyright: Copyright &copy; 2023 yuwb
